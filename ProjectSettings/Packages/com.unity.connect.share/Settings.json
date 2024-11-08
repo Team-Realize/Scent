@@ -19,7 +19,7 @@
             {
                 "type": "System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
                 "key": "buildOutputDirList",
-                "value": "{\"m_Value\":\"D:/Development/KUCC/MobileSample/Build/Web;D:/Development/KUCC/MobileSample/WebGL Builds;;;;;;;;\"}"
+                "value": "{\"m_Value\":\"D:/Development/Team-Realize/Scent/Build/Web;D:/Development/KUCC/MobileSample/Build/Web;D:/Development/KUCC/MobileSample/WebGL Builds;;;;;;;\"}"
             }
         ]
     }
