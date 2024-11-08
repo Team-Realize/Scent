@@ -5,13 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="87e143ea-b69c-42aa-a534-3bfc20d75359" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Scent/.idea/projectSettingsUpdater.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Scent/.idea/projectSettingsUpdater.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Scent/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Scent/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/AIScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/AIScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/Plane.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Plane.mat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/DisplayResponseText.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/DisplayResponseText.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/FlowerDisplayManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/FlowerDisplayManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/FlowerRecommendationRequester.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/FlowerRecommendationRequester.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/rose_unwrap/material/tulip_yellow.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/rose_unwrap/material/tulip_yellow.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,6 +101,7 @@
       <workItem from="1731022560961" duration="76000" />
       <workItem from="1731022660941" duration="1019000" />
       <workItem from="1731023712057" duration="1568000" />
+      <workItem from="1731043421446" duration="2146000" />
     </task>
     <servers />
   </component>

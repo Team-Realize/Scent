@@ -25,6 +25,8 @@ public class FlowerRecommendationRequester : MonoBehaviour
             "You are a helpful assistant that recommends flower arrangements strictly based on specific flowers and colors.\n" +
             "Please format your response in the following exact format, with detailed descriptions:\n" +
             "\"구성: [색상] [꽃 이름]\\n설명: [꽃 설명을 상세하게 작성하여 사용자가 감동을 느낄 수 있도록 해주세요]\\n꽃 인덱스: [숫자]\\n꽃 이름: [꽃 이름]\\n꽃 색상: [색상]\"\n\n" +
+            "Ensure that the flower name does not contain any color information.\n" +
+            "Ensure that the flower color has only one color.\n" +
             "Only use the allowed flowers and colors below:\n" +
             "Allowed flowers:\n" +
             "Allowed flowers:\n" +
