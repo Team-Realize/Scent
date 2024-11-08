@@ -9,11 +9,14 @@ public class DisplayResponseText : MonoBehaviour
 
     private void Start()
     {
-        // ResponseDataManager에서 API 응답 내용을 가져와서 텍스트에 출력
+        // ResponseDataManager에서 API 응답 내용을 가져와서 구성과 설명 부분만 추출
         string apiResponse = ResponseDataManager.Instance.GetApiResponseContent();
+        string parsedResponse = ExtractCompositionAndDescription(apiResponse);
+        
+        Debug.Log(parsedResponse);
         
         // 코루틴 시작 - 한 글자씩 텍스트를 출력
-        StartCoroutine(TypeText(apiResponse));
+        StartCoroutine(TypeText(parsedResponse));
     }
 
     // 텍스트를 한 글자씩 나타내는 코루틴
@@ -26,5 +29,29 @@ public class DisplayResponseText : MonoBehaviour
             responseText.text += letter; // 한 글자씩 추가
             yield return new WaitForSeconds(typingSpeed); // 지정된 속도만큼 대기
         }
+    }
+
+    // 구성과 설명을 추출하는 메서드
+    private string ExtractCompositionAndDescription(string response)
+    {
+        string composition = "";
+        string description = "";
+
+        int compositionIndex = response.IndexOf("구성:");
+        int descriptionIndex = response.IndexOf("설명:");
+
+        if (compositionIndex != -1)
+        {
+            int endIndex = response.IndexOf("\n", compositionIndex);
+            composition = response.Substring(compositionIndex, endIndex - compositionIndex).Trim();
+        }
+
+        if (descriptionIndex != -1)
+        {
+            int endIndex = response.IndexOf("\n", descriptionIndex);
+            description = response.Substring(descriptionIndex, endIndex - descriptionIndex).Trim();
+        }
+
+        return $"{composition}\n{description}";
     }
 }

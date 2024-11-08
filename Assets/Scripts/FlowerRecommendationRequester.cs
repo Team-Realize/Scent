@@ -4,47 +4,58 @@ using System.Collections;
 
 public class FlowerRecommendationRequester : MonoBehaviour
 {
-    [Header("OpenAI API Settings")]
     private string apiKey = "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"; // OpenAI API 키 (변경 필요)
-    private string modelId = "ft:gpt-3.5-turbo-0125:personal::AMXdS9Xx"; // Fine-tuned 모델 ID (변경 필요)
+    private string modelId = "ft:gpt-3.5-turbo-0125:personal::AR5slKZW"; // Fine-tuned 모델 ID (변경 필요)
 
-    private string[] allowedFlowers = {
-        "장미", "튤립", "리시안셔스", "카네이션", "해바라기", "라일락", "수국", "백합", "거베라", "난초",
-        "라넌큘러스", "데이지", "피오니", "다알리아", "국화", "알스트로메리아", "히아신스", "프리지아",
-        "아네모네", "아이리스"
-    };
+    public ColorButtonManager colorButtonManager; // ColorButtonManager 인스턴스
+    public OccasionButtonManager occasionButtonManager; // OccasionButtonManager 인스턴스
+    public SceneChanger sceneChanger; // SceneChanger 인스턴스
 
-    private string[] fillingFlowers = {
-        "베이비 브레스", "유칼립투스", "라벤더", "안개꽃", "솔리다고"
-    };
-
-    public ColorButtonManager colorButtonManager;
-    public OccasionButtonManager occasionButtonManager;
-
-    // SceneChanger 인스턴스 추가
-    public SceneChanger sceneChanger;
+    // ResponseDataManager 인스턴스
+    public ResponseDataManager responseDataManager;
 
     public void RequestFlowerRecommendation()
     {
+        // colorButtonManager와 occasionButtonManager에서 색상과 용도를 가져옴
         string color = colorButtonManager.GetActiveButtonOutput();
         string occasion = occasionButtonManager.GetActiveButtonOutput();
 
+        // 제한 조건과 형식을 포함한 시스템 메시지
+        string systemMessage = 
+            "You are a helpful assistant that recommends flower arrangements strictly based on specific flowers and colors.\n" +
+            "Please format your response in the following exact format, with detailed descriptions:\n" +
+            "\"구성: [색상] [꽃 이름]\\n설명: [꽃 설명을 상세하게 작성하여 사용자가 감동을 느낄 수 있도록 해주세요]\\n꽃 인덱스: [숫자]\\n꽃 이름: [꽃 이름]\\n꽃 색상: [색상]\"\n\n" +
+            "Only use the allowed flowers and colors below:\n" +
+            "Allowed flowers:\n" +
+            "Allowed flowers:\n" +
+            "  - Index 1: 작약\n" +
+            "  - Index 2: 아이리스\n" +
+            "  - Index 3: 장미+튤립\n" +
+            "  - Index 4: 장미+카네이션\n" +
+            "  - Index 5: 수국\n" +
+            "  - Index 6: 국화\n" +
+            "허용된 색상:\n" +
+            "  - 연빨강 (FF8B8B)\n" +
+            "  - 진빨강 (FF4040)\n" +
+            "  - 오렌지 (FF9046)\n" +
+            "  - 노랑 (FFE931)\n" +
+            "  - 파스텔그린 (B4FF31)\n" +
+            "  - 하늘색 (31CDFF)\n" +
+            "  - 라벤더색 (CF86FF)\n" +
+            "  - 연핑크 (FF7BB8)\n" +
+            "  - 흰색 (FFFFFF)\n" +
+            "  - 민트 (96FFF3)\n" +
+            "Each response must contain a long, meaningful description.";
+
         string prompt = $"색상/색감: {color}\n특정 꽃: 추천\n용도: {occasion}";
 
-        string systemMessage = 
-            "You are a helpful assistant that strictly recommends flower arrangements using only specific flowers. " +
-            $"You MUST ONLY use the following primary flowers: {string.Join(", ", allowedFlowers)}. " +
-            "Do NOT use any flowers that are not in this list. " +
-            $"For filling flowers, you MUST ONLY use the following: {string.Join(", ", fillingFlowers)}. " +
-            "Any flower arrangement recommendation MUST follow these rules.";
-
+        // API 요청을 보내는 코루틴 시작
         StartCoroutine(SendOpenAIRequest(prompt, systemMessage));
     }
 
     private IEnumerator SendOpenAIRequest(string prompt, string systemMessage)
     {
         string url = "https://api.openai.com/v1/chat/completions";
-
         string jsonData = $"{{\"model\": \"{modelId}\", \"messages\": [" +
                           $"{{\"role\": \"system\", \"content\": \"{EscapeJson(systemMessage)}\"}}," +
                           $"{{\"role\": \"user\", \"content\": \"{EscapeJson(prompt)}\"}}]}}";
@@ -65,15 +76,16 @@ public class FlowerRecommendationRequester : MonoBehaviour
         if (request.result == UnityWebRequest.Result.Success)
         {
             string response = request.downloadHandler.text;
-            Debug.Log("Full API Response: " + response);
-
             string recommendedContent = ExtractContentFromResponse(response);
-            Debug.Log("Recommended Content: " + recommendedContent);
+            Debug.Log("API Response: " + recommendedContent);
 
-            // ResponseDataManager에 저장
-            ResponseDataManager.Instance.SetApiResponseContent(recommendedContent);
+            // ResponseDataManager를 통해 응답 내용 저장
+            if (responseDataManager != null)
+            {
+                responseDataManager.SetApiResponseContent(recommendedContent);
+            }
 
-            // 요청 시간이 4초 이상일 경우 바로 씬 전환
+            // 씬 전환을 위한 대기 시간 계산 (4초 이상일 경우 즉시 전환)
             if (sceneChanger != null)
             {
                 float waitTime = requestDuration >= 4f ? 0f : (4f - requestDuration);
@@ -82,7 +94,7 @@ public class FlowerRecommendationRequester : MonoBehaviour
         }
         else
         {
-            Debug.LogError("Failed to get response: " + request.error);
+            Debug.LogError("Request failed: " + request.error);
         }
     }
 
