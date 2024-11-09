@@ -9,8 +9,8 @@ public class FlowerDisplayManager : MonoBehaviour
     // 색상 대응 사전 설정
     private Dictionary<string, Color> colorDictionary = new Dictionary<string, Color>
     {
-        { "연빨강", HexToColor("FF8B8B") },
-        { "진빨강", HexToColor("FF4040") },
+        { "코랄레드", HexToColor("FF8B8B") },
+        { "스칼렛레드", HexToColor("FF4040") },
         { "오렌지", HexToColor("FF9046") },
         { "노랑", HexToColor("FFE931") },
         { "파스텔그린", HexToColor("B4FF31") },

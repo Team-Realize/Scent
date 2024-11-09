@@ -170,7 +170,7 @@ MonoBehaviour:
   m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 900, y: 1600}
+  m_ReferenceResolution: {x: 900, y: 900}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 1
   m_PhysicalUnit: 3
@@ -331,7 +331,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 140}
+  m_AnchoredPosition: {x: 0, y: 165}
   m_SizeDelta: {x: 1504, y: 1140}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &436152842
@@ -456,7 +456,7 @@ RectTransform:
   m_GameObject: {fileID: 539561654}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.5, y: 1.5, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 946164960}
@@ -467,8 +467,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: -65.6001}
-  m_SizeDelta: {x: 390, y: -756}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 426, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &539561656
 MonoBehaviour:
@@ -719,8 +719,7 @@ MonoBehaviour:
     \uBC14\uB78D\uB2C8\uB2E4"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: ea54b9420d7d78e4a8f410f046331e76, type: 2}
-  m_sharedMaterial: {fileID: -7340545122638752694, guid: ea54b9420d7d78e4a8f410f046331e76,
-    type: 2}
+  m_sharedMaterial: {fileID: -7340545122638752694, guid: ea54b9420d7d78e4a8f410f046331e76, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -856,8 +855,7 @@ MonoBehaviour:
   m_text: "\uC8FC\uBB38 \uBC29\uBC95"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 70f22f0691a1fcc42836f207a3a80032, type: 2}
-  m_sharedMaterial: {fileID: 7696974750357946329, guid: 70f22f0691a1fcc42836f207a3a80032,
-    type: 2}
+  m_sharedMaterial: {fileID: 7696974750357946329, guid: 70f22f0691a1fcc42836f207a3a80032, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1196,8 +1194,7 @@ MonoBehaviour:
   m_text: "Scent \uC774\uC6A9\uC774 \uC885\uB8CC\uB418\uC5C8\uC2B5\uB2C8\uB2E4\n\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: fcacf41a25e68b44a85219e139a8f9e9, type: 2}
-  m_sharedMaterial: {fileID: -5099087451798307014, guid: fcacf41a25e68b44a85219e139a8f9e9,
-    type: 2}
+  m_sharedMaterial: {fileID: -5099087451798307014, guid: fcacf41a25e68b44a85219e139a8f9e9, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1308,7 +1305,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -140}
+  m_AnchoredPosition: {x: 0, y: -114.99999}
   m_SizeDelta: {x: 1504, y: 1140}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1602477501
@@ -1422,7 +1419,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1695503575
 MonoBehaviour:
   m_ObjectHideFlags: 0

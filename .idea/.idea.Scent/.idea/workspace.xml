@@ -5,7 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="87e143ea-b69c-42aa-a534-3bfc20d75359" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Settings/Build Profiles/New Web Profile.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Settings/Build Profiles/New Web Profile.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/배경.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/배경.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SceneRenderTexture.renderTexture" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SceneRenderTexture.renderTexture" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/AIScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/AIScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/DeliveryScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/DeliveryScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SelectionScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SelectionScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SplashScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SplashScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/FlowerDisplayManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/FlowerDisplayManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/FlowerRecommendationRequester.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/FlowerRecommendationRequester.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Settings/UniversalRenderPipelineGlobalSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Settings/UniversalRenderPipelineGlobalSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,6 +106,7 @@
       <workItem from="1731022660941" duration="1019000" />
       <workItem from="1731023712057" duration="1568000" />
       <workItem from="1731043421446" duration="2830000" />
+      <workItem from="1731181650148" duration="839000" />
     </task>
     <servers />
   </component>
