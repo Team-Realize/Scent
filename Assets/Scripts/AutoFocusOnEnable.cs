@@ -10,6 +10,10 @@ public class AutoFocusOnEnable : MonoBehaviour
     // 오브젝트가 활성화될 때 자동으로 호출되는 메서드
     void OnEnable()
     {
+        // 모바일 환경인 경우 바로 리턴
+        if (Application.isMobilePlatform)
+            return;
+        
         // Input Field에 포커스를 설정
         inputField.Select();
         inputField.ActivateInputField();
@@ -17,6 +21,10 @@ public class AutoFocusOnEnable : MonoBehaviour
 
     void Start()
     {
+        // 모바일 환경인 경우 바로 리턴
+        if (Application.isMobilePlatform)
+            return;
+
         // Input Field의 onSubmit 이벤트에 함수 연결
         inputField.onSubmit.AddListener(OnSubmit);
     }

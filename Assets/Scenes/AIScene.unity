@@ -9631,7 +9631,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\uD604\uC7AC AI \uD50C\uB85C\uB9AC\uC2A4\uD2B8 \uAE30\uB2A5\uC740 \uAC1C\uBC1C\uB2E8\uACC4\uC5D0
+  m_text: "\uD604\uC7AC AI \uD50C\uB85C\uB9AC\uC2A4\uD2B8 \uAE30\uB2A5\uC740 \uBCA0\uD0C0\uB2E8\uACC4\uC5D0
     \uC788\uC2B5\uB2C8\uB2E4\L"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: ea54b9420d7d78e4a8f410f046331e76, type: 2}
