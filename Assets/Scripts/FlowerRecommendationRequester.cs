@@ -29,7 +29,7 @@ public class FlowerRecommendationRequester : MonoBehaviour
             "꽃 인덱스: [꽃의 인덱스 번호]\n" +
             "꽃 이름: [꽃 이름 (색상 정보는 포함하지 마세요)]\n" +
             "꽃 색상: [하나의 색상만 사용]\n\n" +
-            "Strictly adhere to the format above and do not deviate. Only use the allowed flowers and colors provided below:\n" +
+            "Strictly adhere to the format above and do not deviate. Only use the allowed six flowers and colors provided below:\n" +
             "\nAllowed flowers:\n" +
             "  - Index 1: 작약\n" +
             "  - Index 2: 아이리스\n" +
@@ -48,10 +48,11 @@ public class FlowerRecommendationRequester : MonoBehaviour
             "  - 연핑크 (FF7BB8)\n" +
             "  - 흰색 (FFFFFF)\n" +
             "  - 민트 (96FFF3)\n\n" +
+            "Ensure that you vary the recommended flowers and colors based on the user's input and do not default to any single option." +
             "Each response must strictly follow this format without changes and must contain a detailed, moving description that will evoke strong emotions in the user. Use only one color per flower.\n";
 
 
-        string prompt = $"색상/색감: {color}\n특정 꽃: 추천\n용도: {occasion}";
+        string prompt = $"색상/색감: {color}\n 특정 꽃: 가능한 한 Allowedflower 내에서 다양하게 추천 \n용도: {occasion}";
 
         // API 요청을 보내는 코루틴 시작
         StartCoroutine(SendOpenAIRequest(prompt, systemMessage));
