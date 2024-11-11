@@ -413,6 +413,11 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 1839634792}
   m_SourcePrefab: {fileID: 100100000, guid: 9ba60570c83391e47ad461bf13e5af51, type: 3}
+--- !u!23 &54760382 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: -4803983189561618010, guid: 9ba60570c83391e47ad461bf13e5af51, type: 3}
+  m_PrefabInstance: {fileID: 54760381}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &207147540
 GameObject:
   m_ObjectHideFlags: 0
@@ -1318,6 +1323,78 @@ MonoBehaviour:
           m_StringArgument: White
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 662268318}
+        m_TargetAssemblyTypeName: MaterialController, Assembly-CSharp
+        m_MethodName: ChangeMaterialColor
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: White
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 662268317}
+        m_TargetAssemblyTypeName: MaterialController, Assembly-CSharp
+        m_MethodName: ChangeMaterialColor
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: White
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 662268316}
+        m_TargetAssemblyTypeName: MaterialController, Assembly-CSharp
+        m_MethodName: ChangeMaterialColor
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: White
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 662268315}
+        m_TargetAssemblyTypeName: MaterialController, Assembly-CSharp
+        m_MethodName: ChangeMaterialColor
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: White
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 662268314}
+        m_TargetAssemblyTypeName: MaterialController, Assembly-CSharp
+        m_MethodName: ChangeMaterialColor
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: White
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 662268313}
+        m_TargetAssemblyTypeName: MaterialController, Assembly-CSharp
+        m_MethodName: ChangeMaterialColor
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: White
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &487324549
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1964,6 +2041,12 @@ GameObject:
   - component: {fileID: 662268307}
   - component: {fileID: 662268311}
   - component: {fileID: 662268310}
+  - component: {fileID: 662268318}
+  - component: {fileID: 662268317}
+  - component: {fileID: 662268316}
+  - component: {fileID: 662268315}
+  - component: {fileID: 662268314}
+  - component: {fileID: 662268313}
   - component: {fileID: 662268312}
   m_Layer: 0
   m_Name: EventSystem
@@ -2063,6 +2146,84 @@ MonoBehaviour:
   targetButton: {fileID: 1834856449}
   sceneName: DeliveryScene
   waitTime: 0
+--- !u!114 &662268313
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 662268306}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08bd1814185d7e242a622d18ae249bfe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetRenderer: {fileID: 54760382}
+--- !u!114 &662268314
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 662268306}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08bd1814185d7e242a622d18ae249bfe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetRenderer: {fileID: 1879307320}
+--- !u!114 &662268315
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 662268306}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08bd1814185d7e242a622d18ae249bfe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetRenderer: {fileID: 1879307321}
+--- !u!114 &662268316
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 662268306}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08bd1814185d7e242a622d18ae249bfe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetRenderer: {fileID: 796175634}
+--- !u!114 &662268317
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 662268306}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08bd1814185d7e242a622d18ae249bfe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetRenderer: {fileID: 1722056620}
+--- !u!114 &662268318
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 662268306}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08bd1814185d7e242a622d18ae249bfe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetRenderer: {fileID: 1004245047}
 --- !u!1 &682343316
 GameObject:
   m_ObjectHideFlags: 0
@@ -2932,6 +3093,11 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 2074511112}
   m_SourcePrefab: {fileID: 100100000, guid: e3642b16f3b287d4aaf125972b5ef509, type: 3}
+--- !u!23 &796175634 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 1964117207745919855, guid: e3642b16f3b287d4aaf125972b5ef509, type: 3}
+  m_PrefabInstance: {fileID: 796175633}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &832575517
 GameObject:
   m_ObjectHideFlags: 0
@@ -3078,6 +3244,78 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 662268310}
+        m_TargetAssemblyTypeName: MaterialController, Assembly-CSharp
+        m_MethodName: ChangeMaterialColor
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: SkyBlue
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 662268318}
+        m_TargetAssemblyTypeName: MaterialController, Assembly-CSharp
+        m_MethodName: ChangeMaterialColor
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: SkyBlue
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 662268317}
+        m_TargetAssemblyTypeName: MaterialController, Assembly-CSharp
+        m_MethodName: ChangeMaterialColor
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: SkyBlue
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 662268316}
+        m_TargetAssemblyTypeName: MaterialController, Assembly-CSharp
+        m_MethodName: ChangeMaterialColor
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: SkyBlue
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 662268315}
+        m_TargetAssemblyTypeName: MaterialController, Assembly-CSharp
+        m_MethodName: ChangeMaterialColor
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: SkyBlue
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 662268314}
+        m_TargetAssemblyTypeName: MaterialController, Assembly-CSharp
+        m_MethodName: ChangeMaterialColor
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: SkyBlue
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 662268313}
         m_TargetAssemblyTypeName: MaterialController, Assembly-CSharp
         m_MethodName: ChangeMaterialColor
         m_Mode: 5
@@ -3735,6 +3973,11 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 1414419774}
   m_SourcePrefab: {fileID: 100100000, guid: 82c3e84cf3220e841a1435174966cc3e, type: 3}
+--- !u!23 &1004245047 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: -4803983189561618010, guid: 82c3e84cf3220e841a1435174966cc3e, type: 3}
+  m_PrefabInstance: {fileID: 1004245046}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1124732203
 GameObject:
   m_ObjectHideFlags: 0
@@ -4103,6 +4346,78 @@ MonoBehaviour:
           m_StringArgument: Purple
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 662268318}
+        m_TargetAssemblyTypeName: MaterialController, Assembly-CSharp
+        m_MethodName: ChangeMaterialColor
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Purple
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 662268317}
+        m_TargetAssemblyTypeName: MaterialController, Assembly-CSharp
+        m_MethodName: ChangeMaterialColor
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Purple
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 662268316}
+        m_TargetAssemblyTypeName: MaterialController, Assembly-CSharp
+        m_MethodName: ChangeMaterialColor
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Purple
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 662268315}
+        m_TargetAssemblyTypeName: MaterialController, Assembly-CSharp
+        m_MethodName: ChangeMaterialColor
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Purple
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 662268314}
+        m_TargetAssemblyTypeName: MaterialController, Assembly-CSharp
+        m_MethodName: ChangeMaterialColor
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Purple
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 662268313}
+        m_TargetAssemblyTypeName: MaterialController, Assembly-CSharp
+        m_MethodName: ChangeMaterialColor
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Purple
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1375737371
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4444,6 +4759,78 @@ MonoBehaviour:
           m_StringArgument: Red
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 662268318}
+        m_TargetAssemblyTypeName: MaterialController, Assembly-CSharp
+        m_MethodName: ChangeMaterialColor
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Red
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 662268317}
+        m_TargetAssemblyTypeName: MaterialController, Assembly-CSharp
+        m_MethodName: ChangeMaterialColor
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Red
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 662268316}
+        m_TargetAssemblyTypeName: MaterialController, Assembly-CSharp
+        m_MethodName: ChangeMaterialColor
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Red
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 662268315}
+        m_TargetAssemblyTypeName: MaterialController, Assembly-CSharp
+        m_MethodName: ChangeMaterialColor
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Red
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 662268314}
+        m_TargetAssemblyTypeName: MaterialController, Assembly-CSharp
+        m_MethodName: ChangeMaterialColor
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Red
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 662268313}
+        m_TargetAssemblyTypeName: MaterialController, Assembly-CSharp
+        m_MethodName: ChangeMaterialColor
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Red
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1546513619
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4612,6 +4999,78 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 662268310}
+        m_TargetAssemblyTypeName: MaterialController, Assembly-CSharp
+        m_MethodName: ChangeMaterialColor
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Yellow
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 662268318}
+        m_TargetAssemblyTypeName: MaterialController, Assembly-CSharp
+        m_MethodName: ChangeMaterialColor
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Yellow
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 662268317}
+        m_TargetAssemblyTypeName: MaterialController, Assembly-CSharp
+        m_MethodName: ChangeMaterialColor
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Yellow
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 662268316}
+        m_TargetAssemblyTypeName: MaterialController, Assembly-CSharp
+        m_MethodName: ChangeMaterialColor
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Yellow
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 662268315}
+        m_TargetAssemblyTypeName: MaterialController, Assembly-CSharp
+        m_MethodName: ChangeMaterialColor
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Yellow
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 662268314}
+        m_TargetAssemblyTypeName: MaterialController, Assembly-CSharp
+        m_MethodName: ChangeMaterialColor
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Yellow
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 662268313}
         m_TargetAssemblyTypeName: MaterialController, Assembly-CSharp
         m_MethodName: ChangeMaterialColor
         m_Mode: 5
@@ -4917,6 +5376,11 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 1905619107}
   m_SourcePrefab: {fileID: 100100000, guid: 69a322cbdadf03f4c96b6558da055649, type: 3}
+--- !u!23 &1722056620 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: -4803983189561618010, guid: 69a322cbdadf03f4c96b6558da055649, type: 3}
+  m_PrefabInstance: {fileID: 1722056619}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1755697698
 GameObject:
   m_ObjectHideFlags: 0
@@ -5490,6 +5954,16 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 1622336790}
   m_SourcePrefab: {fileID: 100100000, guid: e7a73b76cfec19f43a5d6323995a10a3, type: 3}
+--- !u!23 &1879307320 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 3533225272559271662, guid: e7a73b76cfec19f43a5d6323995a10a3, type: 3}
+  m_PrefabInstance: {fileID: 1879307319}
+  m_PrefabAsset: {fileID: 0}
+--- !u!23 &1879307321 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 4131374327581760369, guid: e7a73b76cfec19f43a5d6323995a10a3, type: 3}
+  m_PrefabInstance: {fileID: 1879307319}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1905619106 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 69a322cbdadf03f4c96b6558da055649, type: 3}

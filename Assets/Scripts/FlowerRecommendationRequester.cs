@@ -21,22 +21,23 @@ public class FlowerRecommendationRequester : MonoBehaviour
         string occasion = occasionButtonManager.GetActiveButtonOutput();
 
         // 제한 조건과 형식을 포함한 시스템 메시지
-        string systemMessage = 
+        string systemMessage =
             "You are a helpful assistant that recommends flower arrangements strictly based on specific flowers and colors. \n" +
             "You must follow the exact format below in each response, with no deviations or additional information:\n\n" +
-            "구성: [색상] [꽃 이름]\n" +
+            "구성: [색상(하나의 색상만 사용)] [꽃 이름]\n" +
             "설명: [사용자가 감동을 느낄 수 있도록, 꽃의 특성과 아름다움을 표현하는 긴 설명 작성]\n" +
             "꽃 인덱스: [꽃의 인덱스 번호]\n" +
             "꽃 이름: [꽃 이름 (색상 정보는 포함하지 마세요)]\n" +
             "꽃 색상: [하나의 색상만 사용]\n\n" +
             "Strictly adhere to the format above and do not deviate. Only use the allowed six flowers and colors provided below:\n" +
-            "\nAllowed flowers:\n" +
+            "Allowed flowers:\n" +
             "  - Index 1: 작약\n" +
             "  - Index 2: 아이리스\n" +
             "  - Index 3: 장미+튤립\n" +
             "  - Index 4: 장미+카네이션\n" +
             "  - Index 5: 수국\n" +
             "  - Index 6: 국화\n\n" +
+            "Do not repeatedly recommend the same flower, especially Index 1 (작약). Make sure to provide variety by using different flowers from Index 1 to Index 6, depending on the user's input." +
             "Allowed colors:\n" +
             "  - 코랄레드 (FF8B8B)\n" +
             "  - 스칼렛레드 (FF4040)\n" +
@@ -48,11 +49,11 @@ public class FlowerRecommendationRequester : MonoBehaviour
             "  - 연핑크 (FF7BB8)\n" +
             "  - 흰색 (FFFFFF)\n" +
             "  - 민트 (96FFF3)\n\n" +
-            "Ensure that you vary the recommended flowers and colors based on the user's input and do not default to any single option." +
-            "Each response must strictly follow this format without changes and must contain a detailed, moving description that will evoke strong emotions in the user. Use only one color per flower.\n";
+            "Each response must strictly follow this format without changes and must contain a detailed, moving description that will evoke strong emotions in the user. Use only one color per flower.\n" +
+            "Don't contain Flower Color output in FlowerName output";
 
 
-        string prompt = $"색상/색감: {color}\n 특정 꽃: 가능한 한 Allowedflower 내에서 다양하게 추천 \n용도: {occasion}";
+        string prompt = $"색상/색감: {color}\n \n용도: {occasion}";
 
         // API 요청을 보내는 코루틴 시작
         StartCoroutine(SendOpenAIRequest(prompt, systemMessage));

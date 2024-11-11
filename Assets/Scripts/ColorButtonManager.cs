@@ -14,7 +14,7 @@ public class ColorButtonManager : MonoBehaviour
     private string[] predefinedStrings = {
         "붉은색,스칼렛",
         "노란색,옐로우",
-        "초록색,그린",
+        "하늘색,스카이블루",
         "보라색,라벤더",
         "분홍색,핑크"
     };
