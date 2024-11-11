@@ -15,6 +15,7 @@ public class DialogManager : MonoBehaviour
     public void OpenDialog()
     {
         dialogPanel.SetActive(true);
+        Debug.Log("dssd");
     }
 
     // 다이얼로그 닫기 함수
