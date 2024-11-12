@@ -53,7 +53,7 @@ public class FlowerRecommendationRequester : MonoBehaviour
             "Don't contain Flower Color output in FlowerName output";
 
 
-        string prompt = $"색상/색감: {color}\n \n용도: {occasion}";
+        string prompt = $"색상/색감: {color}\n \n용도: 장미 카네이션";
 
         // API 요청을 보내는 코루틴 시작
         StartCoroutine(SendOpenAIRequest(prompt, systemMessage));

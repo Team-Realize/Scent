@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="87e143ea-b69c-42aa-a534-3bfc20d75359" name="Changes" comment="" />
+    <list default="true" id="87e143ea-b69c-42aa-a534-3bfc20d75359" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Scent/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Scent/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/DialogManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/DialogManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/FlowerRecommendationRequester.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/FlowerRecommendationRequester.cs" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -28,7 +33,7 @@
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;Video&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -98,6 +103,8 @@
       <workItem from="1731181650148" duration="839000" />
       <workItem from="1731182775014" duration="2162000" />
       <workItem from="1731280156469" duration="9216000" />
+      <workItem from="1731432971810" duration="103000" />
+      <workItem from="1731433505619" duration="2284000" />
     </task>
     <servers />
   </component>
