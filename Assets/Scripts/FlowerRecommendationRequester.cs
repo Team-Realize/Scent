@@ -34,7 +34,7 @@ public class FlowerRecommendationRequester : MonoBehaviour
             "  - Index 1: 작약\n" +
             "  - Index 2: 아이리스\n" +
             "  - Index 3: 장미+튤립\n" +
-            "  - Index 4: 장미+카네이션\n" +
+            "  - Index 4: 장미\n" +
             "  - Index 5: 수국\n" +
             "  - Index 6: 국화\n\n" +
             "Do not repeatedly recommend the same flower, especially Index 1 (작약). Make sure to provide variety by using different flowers from Index 1 to Index 6, depending on the user's input." +
@@ -53,7 +53,7 @@ public class FlowerRecommendationRequester : MonoBehaviour
             "Don't contain Flower Color output in FlowerName output";
 
 
-        string prompt = $"색상/색감: {color}\n \n용도: 장미 카네이션";
+        string prompt = $"색상/색감: {color}\n \n용도: only 장미, 연인선물 \n Index: 4";
 
         // API 요청을 보내는 코루틴 시작
         StartCoroutine(SendOpenAIRequest(prompt, systemMessage));

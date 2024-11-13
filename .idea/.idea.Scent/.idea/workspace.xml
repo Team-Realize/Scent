@@ -6,9 +6,13 @@
   <component name="ChangeListManager">
     <list default="true" id="87e143ea-b69c-42aa-a534-3bfc20d75359" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Scent/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Scent/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Bouquet/20/Material/ai_two_sided.002.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Bouquet/20/Material/ai_two_sided.002.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Bouquet/20/Material/ai_two_sided.003.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Bouquet/20/Material/ai_two_sided.003.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/DeliveryScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/DeliveryScene.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/DialogManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/DialogManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/FlowerRecommendationRequester.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/FlowerRecommendationRequester.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Settings/UniversalRenderPipelineGlobalSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Settings/UniversalRenderPipelineGlobalSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,6 +109,7 @@
       <workItem from="1731280156469" duration="9216000" />
       <workItem from="1731432971810" duration="103000" />
       <workItem from="1731433505619" duration="2284000" />
+      <workItem from="1731439847087" duration="1936000" />
     </task>
     <servers />
   </component>

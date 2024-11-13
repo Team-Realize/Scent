@@ -3752,6 +3752,7 @@ MonoBehaviour:
   dialogPanel: {fileID: 783615582}
   object1: {fileID: 0}
   object2: {fileID: 0}
+  object1Color: {r: 0, g: 0, b: 0, a: 0}
 --- !u!114 &662268320
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3767,6 +3768,7 @@ MonoBehaviour:
   dialogPanel: {fileID: 909052056}
   object1: {fileID: 0}
   object2: {fileID: 0}
+  object1Color: {r: 0, g: 0, b: 0, a: 0}
 --- !u!114 &662268321
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3782,6 +3784,7 @@ MonoBehaviour:
   dialogPanel: {fileID: 2025406841}
   object1: {fileID: 0}
   object2: {fileID: 0}
+  object1Color: {r: 0, g: 0, b: 0, a: 0}
 --- !u!114 &662268322
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3797,6 +3800,7 @@ MonoBehaviour:
   dialogPanel: {fileID: 363639441}
   object1: {fileID: 39968824}
   object2: {fileID: 1880516446}
+  object1Color: {r: 1, g: 0.7137255, b: 0.7137255, a: 0}
 --- !u!1 &682343316
 GameObject:
   m_ObjectHideFlags: 0

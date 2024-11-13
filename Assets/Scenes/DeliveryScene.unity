@@ -623,7 +623,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 971298399}
+      - m_Target: {fileID: 971298401}
         m_TargetAssemblyTypeName: DialogManager, Assembly-CSharp
         m_MethodName: OpenDialog
         m_Mode: 1
@@ -1153,6 +1153,7 @@ GameObject:
   - component: {fileID: 971298396}
   - component: {fileID: 971298399}
   - component: {fileID: 971298400}
+  - component: {fileID: 971298401}
   m_Layer: 0
   m_Name: EventSystem
   m_TagString: Untagged
@@ -1238,6 +1239,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogPanel: {fileID: 1522543159}
+  object1: {fileID: 0}
+  object2: {fileID: 0}
+--- !u!114 &971298401
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 971298395}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f9a19013ce5010479c3bbf82d4c36da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogPanel: {fileID: 2109943695}
   object1: {fileID: 0}
   object2: {fileID: 0}
 --- !u!1 &1007372426
@@ -2032,7 +2048,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &2109943697
 MonoBehaviour:
   m_ObjectHideFlags: 0
