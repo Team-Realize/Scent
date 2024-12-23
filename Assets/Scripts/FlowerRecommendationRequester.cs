@@ -4,7 +4,8 @@ using System.Collections;
 
 public class FlowerRecommendationRequester : MonoBehaviour
 {
-    private string apiKey = "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"; // OpenAI API 키 (변경 필요)
+    
+    private string apiKey; // ApiKeyLoader에서 가져온 API 키
     private string modelId = "ft:gpt-3.5-turbo-0125:personal::AR5slKZW"; // Fine-tuned 모델 ID (변경 필요)
 
     public ColorButtonManager colorButtonManager; // ColorButtonManager 인스턴스
@@ -13,6 +14,21 @@ public class FlowerRecommendationRequester : MonoBehaviour
 
     // ResponseDataManager 인스턴스
     public ResponseDataManager responseDataManager;
+    private ApiKeyLoader apiKeyLoader; // ApiKeyLoader 인스턴스
+
+ void Start()
+    {
+        // ApiKeyLoader 컴포넌트 가져오기
+        apiKeyLoader = FindObjectOfType<ApiKeyLoader>();
+        if (apiKeyLoader != null)
+        {
+            apiKey = apiKeyLoader.apiKey; // ApiKeyLoader에서 API 키 가져오기
+        }
+        else
+        {
+            Debug.LogError("ApiKeyLoader instance not found in the scene!");
+        }
+    }
 
     public void RequestFlowerRecommendation()
     {
