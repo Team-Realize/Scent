@@ -1,1 +1,1 @@
-https://team-realize.github.io/Scent_Landing/
+https://team-realize.github.io/Scent_Landing_Web/
